@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    transition: background 0.8s;
+    overflow: hidden;
+  }
+  
+  /* Day & Night backgrounds */
+  body.day {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  }
+  body.night {
+    background: linear-gradient(135deg, #141e30, #243b55);
+  }
+  
+  .card {
+    background: white;
+    width: 360px;
+    padding: 25px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    z-index: 2;
+  }
+  
+  h1 {
+    color: #ff3e6c;
+    margin-bottom: 10px;
+  }
+  
+  #message {
+    font-size: 15px;
+    color: #444;
+    min-height: 120px;
+    line-height: 1.6;
+  }
+  
+  .toggle {
+    margin: 10px 0;
+  }
+  
+  .toggle button {
+    margin: 5px;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #ff3e6c;
+    color: white;
+    font-size: 13px;
+  }
+  
+  .main-btn {
+    margin-top: 10px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #ff3e6c;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .response {
+    margin-top: 15px;
+    color: #2d6a4f;
+    display: none;
+    font-size: 14px;
+  }
+  
+  /* Floating hearts */
+  .heart {
+    position: absolute;
+    color: rgba(255,255,255,0.8);
+    font-size: 20px;
+    animation: float 6s linear infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(100vh) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-10vh) scale(1.5);
+      opacity: 0;
+    }
+  }
